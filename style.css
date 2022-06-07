@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, nav {
+    background-color: bisque;
+    height: 75vh;
+}
+
+
+.navigation {
+    background-color:grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 10%;
+
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.description {
+    background-color: black;
+    position: relative;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.characters {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.characters div {
+    aspect-ratio: 16/9;
+    margin: 3px;
+    border: solid 1px black;
+    border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.sagas {
+    background-color: rgb(58, 2, 11);
+}
+
+.sagas div {
+    height: 75px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sagas a {
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    color: white;
+}
+
+
+
+
+.world {
+    background-color: rgb(43, 42, 42);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.world div {
+    height: 125px;
+    border: solid 1px black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.world a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: darkgoldenrod;
+}
