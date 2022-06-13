@@ -1,109 +1,581 @@
 * {
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
 }
 
-header, nav {
-    background-color: bisque;
-    height: 75vh;
+body {
+    background-color: #29170C;
 }
 
+header {
+    height: 100vh;
+}
+
+nav {
+    height: 13%;
+}
 
 .navigation {
-    background-color:grey;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    height: 10%;
-
+    height: 100%;
+    background-color: rgb(10, 15, 5);
 }
 
 .navigation li a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 40px;
+
+}
+.navigation a:hover {
+    color:red;
+}
+
+#logo {
+    position: relative;
+    left: 30px;
+    width: 200px;
+    height: 80%;
+    background-image: url("op-images/one-piece-logo.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    transform: scale(1.2)
+}
+
+#header-div {
+    height: 87%;
+    background-image: url("op-images/staw-hats-15.png");
+    background-size: 1400px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: -50px;
+
 }
 
 
-
 .description {
-    background-color: black;
     position: relative;
-    height: 40px;
+    height: 20vh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: overline;
+    font-size: 350%;
 
 }
 
+
+/* quotes section css*/
+#quotes-section {
+    padding: 20px;
+}
+
+#quotes {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+#quotes::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/straw-hats-98.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.2;
+
+}
+
+#quotes p {
+    position: relative;
+    color: whitesmoke;
+    text-transform: capitalize;
+    display: inline;
+    max-width: fit-content;
+    font-family: cursive;
+
+}
+
+#quotes p:nth-child(1) {
+    left: 10px;
+}
+
+#quotes p:nth-child(2) {
+    left: 300px
+}
+
+#quotes p:nth-child(3) {
+    left: 120px;
+}
+
+#quotes p:nth-child(4) {
+    left: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* characters section css*/
 
 
 .characters {
-    background-color: red;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.characters div {
-    aspect-ratio: 16/9;
-    margin: 3px;
-    border: solid 1px black;
-    border-radius: 4px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 5px;
+    margin-bottom: 50px;
+    padding: 7px;
 }
 
 .characters a {
+    height: 55vh;
     text-decoration: none;
+    border: solid black 2px;
+    transition: all 250ms ease-in-out;
+    box-shadow: 2px 2px 14px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.characters>a:hover {
+    transform: translateY(-1.5rem);
+    box-shadow: 2px 4px 12px rgba(255,255,255, 0.3);
+}
+
+
+
+
+.characters>a>div:first-child{
+    height: 65%;
+    width: 100%;
+}
+
+.characters>a>div:last-child{
+    background-color: black;
+    height: 35%;
+    border-top: black 3px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.characters a:nth-child(1)>div:first-child {
+    background-image: url("op-images/straw-hats-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.characters a:nth-child(2)>div:first-child {
+    background-image: url("op-images/yonko.png");
+    background-position: top;
+    background-size: cover;
+}
+
+.characters a:nth-child(3) div:first-child {
+    background-image: url("op-images/three-admirals.jpg");
+    background-position: center;
+    background-size: 440px;
+}
+
+.characters a:nth-child(4) div:first-child {
+    background-image: url("op-images/shichibukai.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.characters a:nth-child(5) div:first-child {
+    background-image: url("op-images/luffy's-allys.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.characters a:nth-child(6) div:first-child {
+    background-image: url("op-images/side-characters.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+
+.characters h3 {
+    text-align: center;
+    margin: 1.5%;
+    font-size: 175%;
+    font-family:'Times New Roman', Times, serif;
     color: white;
 }
+
+.characters p {
+    margin: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+.img-box p {
+    position: absolute;
+    font-size: 0px;
+}
+
+
+
+
+
+
+/* sagas section css */
 
 
 
 .sagas {
-    background-color: rgb(58, 2, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
-.sagas div {
-    height: 75px;
+.sagas>a {
+    height: 300px;
+    width: 98%;
     border: solid 1px black;
+    background-color: #DBDAB8;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+.sagas>a>div:first-child {
+    height: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.sagas>a>div:last-child {
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .sagas a {
     text-decoration: none;
     position: relative;
-    left: 10px;
+    color: white;
+    transition: transform 200ms ease-in-out;
+    overflow: hidden;
+}
+.sagas> a:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+#east-blue {
+    width: 60%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+#east-blue::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/east-blue.png");
+    background-size: 100%;
+    background-position: bottom;
+    opacity: 0.5;
+
+
+}
+
+
+#arabasta {
+    width: 60%;
+    position: relative;
+}
+#arabasta::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/arabasta.png");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+#skypiea {
+    width: 60%;
+    position: relative;
+}
+#skypiea::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/skypiea.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+#water7 {
+    width: 60%;
+    position: relative;
+}
+#water7::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/water7.png");
+    background-size: 900px;
+    background-position: center;
+    background-position-y: -45px;
+    opacity: 0.5;
+}
+
+
+#thriller-bark {
+    width: 60%;
+    position: relative;
+}
+#thriller-bark::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/thriller-bark.png");
+    background-size: 820px;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+#summit-war {
+    width: 60%;
+    position: relative;
+}
+#summit-war::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/marineford.png");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+#fish-man-island {
+    width: 60%;
+    position: relative;
+}
+#fish-man-island::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/fish-man-island.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+#dressrosa {
+    width: 60%;
+    position: relative;
+}
+#dressrosa::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/dressrosa.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+#four-emperors {
+    width: 60%;
+    position: relative;
+}
+#four-emperors::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("op-images/wano.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.sagas h3 {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 350%;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+.sagas p {
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 150%;
+    text-align: center;
     color: white;
 }
 
 
 
 
+
+/* world section css */
+
+
+
 .world {
-    background-color: rgb(43, 42, 42);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.world div {
-    height: 125px;
+.world a {
+    height: 45vh;
     border: solid 1px black;
     margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+}
+.world a:hover {
+    transform: scale(1.02);
+    position: absolute;
+    z-index: 3;
 }
 
-.world a {
+.world h3 {
+    position: relative;
     text-decoration: none;
     color: white;
+    font-size: 300%;
+}
+
+.world a:first-child {
+    position: relative;
+    margin-left: 7px;
+}
+.world a:first-child::before {
+    content: "";
+    top: 0px; left: 0px; bottom: 0px; right: 0px;
+    position: absolute;
+    background-image: url("op-images/enies-lobby.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+.world a:last-child {
+    background-color: black;
+    position: relative;
+    margin-right: 7px;
+}
+.world a:last-child::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url("op-images/devil-fruits.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
 }
 
 footer {
-    background-color: darkgoldenrod;
+    margin-top: 100px;
+    height: 20vh;
+    background-color: #180d07;
+    border-top: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer h2, p {
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+p {
+    font-family: monospace;
 }
